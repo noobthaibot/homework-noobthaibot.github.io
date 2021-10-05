@@ -1,16 +1,20 @@
 @font-face {
-	font-family: 'SegoeUI';
-	src: url('../../fonts/SegoeUI.eot');
-	src: local('☺'), url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf') format('truetype'), url('../fonts/SegoeUI.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: "SegoeUI";
+    src: url("../../fonts/SegoeUI.eot");
+    src: local("☺"), url("../fonts/SegoeUI.woff") format("woff"),
+        url("../fonts/SegoeUI.ttf") format("truetype"),
+        url("../fonts/SegoeUI.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face {
-	font-family: 'SegoeUI-Bold';
-	src: url('../fonts/SegoeUI-Bold.eot');
-	src: local('☺'), url('../fonts/SegoeUI-Bold.woff') format('woff'), url('../fonts/SegoeUI-Bold.ttf') format('truetype'), url('../fonts/SegoeUI-Bold.svg') format('svg');
-	font-weight: 700;
-	font-style: normal;
+    font-family: "SegoeUI-Bold";
+    src: url("../fonts/SegoeUI-Bold.eot");
+    src: local("☺"), url("../fonts/SegoeUI-Bold.woff") format("woff"),
+        url("../fonts/SegoeUI-Bold.ttf") format("truetype"),
+        url("../fonts/SegoeUI-Bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal;
 }
 
 :root {
@@ -21,7 +25,7 @@
     --secondary-hover-color: #009091;
 }
 body {
-    font-family: 'SegoeUI';
+    font-family: "SegoeUI";
     margin: 0;
 }
 ul {
@@ -144,7 +148,6 @@ h4 {
 
 .services-list li:hover {
     color: var(--secondary-hover-color);
-    
 }
 .services-list img {
     flex-shrink: 0;
@@ -254,7 +257,6 @@ h4 {
     background-image: url(../img/triangle4.svg);
 }
 
-
 /* ---------------SECTION-WORKFLOW-------- */
 .workflow {
     width: 1200px;
@@ -265,7 +267,7 @@ h4 {
     font-weight: 700;
     line-height: 56px;
     color: var(--secondary-text-color);
-    padding: 0px 310px 85px 370px;   
+    padding: 0px 310px 85px 370px;
 }
 .workflow-list {
     display: flex;
@@ -281,9 +283,13 @@ h4 {
 }
 .workflow-list li:not(:nth-child(3n)) {
     margin-right: 150px;
-
 }
-.workflow-list img{
+
+.workflow-list li:hover {
+    color: var(--secondary-hover-color);
+}
+
+.workflow-list img {
     margin-right: 27px;
 }
 
@@ -298,5 +304,114 @@ h4 {
     font-weight: 700;
     line-height: 56px;
     color: var(--secondary-text-color);
-    padding: 100px 412px 42px 427px;  
+    padding: 100px 412px 42px 427px;
 }
+.projects-list {
+    padding-top: 100px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+.projects-list li:not(:last-child) {
+    margin-right: 78px;
+}
+.projects-list p {
+    margin: 0;
+    padding: 27px 47px 24px 47px;
+}
+
+.projects-card-first {
+    width: 316px;
+    height: 415px;
+}
+
+.first-card-bg {
+    width: 316px;
+    height: 248px;
+    background: #02b4b5;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.first-card-bg img {
+    position: absolute;
+    top: -59px;
+    left: -42px;
+}
+.first-card-bg-btm {
+    height: 167px;
+    background-color: #009091;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.first-card-bg-btm a,
+.second-card-bg-btm a,
+.third-card-bg-btm a {
+    display: block;
+    text-align: center;
+    margin-left: 51px;
+    width: 226px;
+    height: 41px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--primary-text-color);
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.first-card-bg-btm a:hover,
+.second-card-bg-btm a:hover,
+.third-card-bg-btm a:hover {
+    background-color: rgba(10, 82, 102, 0.7);
+    color: rgba(243, 248, 171, 0.8);
+}
+.second-card-bg {
+    width: 316px;
+    height: 248px;
+    background: #D05E24;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: relative;
+}
+
+.second-card-bg img {
+    position: absolute;
+    top: 65px;
+    left: -42px;
+}
+
+.second-card-bg .secondary-img {
+    position: absolute;
+    top: -71px;
+    left: 14px;
+}
+.second-card-bg-btm {
+    height: 167px;
+    width: 316px;
+    background-color: #C94705;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.third-card-bg {
+    width: 316px;
+    height: 248px;
+    background: #03689E;
+    position: relative;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}    
+.third-card-bg img {
+    position: absolute;
+    top: -44px;
+    left: 44px;
+}
+
+.third-card-bg-btm {
+    height: 167px;
+    width: 316px;
+    background-color: #005E91;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
